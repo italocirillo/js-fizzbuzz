@@ -1,12 +1,25 @@
+// VARIABILI
+const rowElement = document.querySelector(".row");
+let colore="";
+let messaggio="";
+
+// LOGICA 
+// ALGORITMO BUZZFIZZ
 for(let i = 1; i <= 100 ; i++ ){
     if(i % 3 === 0 && i % 5 === 0){
-        console.log("BUZZFIZZ");
+        colore="rosso";
+        messaggio="FIZZBUZZ";
     }else if(i % 3 === 0){
-        console.log("FIZZ");
+        colore="verde";
+        messaggio="FIZZ";
     }else if(i % 5 === 0){
-        console.log("BUZZ");
+        colore="giallo";
+        messaggio="BUZZ";
     }else{
-        console.log(i);
-    }
-    
+        colore="blu";
+        messaggio=i;
+    }  
+    // OUTPUT
+    rowElement.innerHTML += `<div class="col ${colore}"> <p>${messaggio}</p> </div>`;
 }
+

@@ -1,3 +1,60 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: blue;
+    background-color: #083b4c;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* TIPOGRAFY */
+h1{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    padding: 0.5em;
+    letter-spacing: 0.1rem;
+}
+
+
+/* Container */
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    text-align: center;
+}
+.col{
+    width: calc(80vw / 7 - 1.5em);
+    height: calc(80vw / 7 - 1.5em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 10px black;
+    padding: 0.2em;
+}
+.col p{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+/* Colori */
+.rosso{
+    background-color: #f1466f;
+}
+.verde{
+    background-color: #0ad6a0;
+}
+.giallo{
+    background-color: #ffd166;
+}
+.blu{
+    background-color: #1389b2;
 }
